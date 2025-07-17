@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -105,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$PATH:/opt/idea-IU-242.23339.11/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$HOME/.local/bin:$PATH
 export GTK_THEME="Nordic-master"
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     eval "$(ssh-agent -s)"
