@@ -101,6 +101,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias vim="nvim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
