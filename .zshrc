@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH=$HOME/.cargo/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -104,7 +104,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 alias vim="nvim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias ls="eza --icons"
+alias cd="z"
+eval "$(zoxide init zsh)"
 export PATH=$PATH:/opt/idea-IU-242.23339.11/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.local/bin:$PATH
