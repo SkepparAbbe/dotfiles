@@ -1,1 +1,12 @@
-style=style.css
+location=center
+show=drun
+prompt=Search Apps...
+filter_rate=100
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
+insensitivy=true
+allow_images=true
+image_size=28tyle=style.css

@@ -231,3 +231,13 @@ hl.window_rule({
 	},
 	no_focus = true,
 })
+
+local rules = {
+	layerrule = {
+		"blur, waybar",
+		"ignorezero, waybar",
+		"blur, wofi",
+		"ignorezero, wofi",
+		"blur, notifications",
+	},
+}

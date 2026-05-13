@@ -1,51 +1,72 @@
+/* Dark Mocha theme with transparency */
 window {
-    margin: 5px;
-    border: 2px solid #4C566A;
-    background-color: #2E3440;
-    color: #D8DEE9;
-    font-family: "JetBrains Mono", "Fira Code", monospace;
+    margin: 0px;
+    border: 2px solid #cba6f7; /* Mauve Accent */
+    border-radius: 15px;
+    background-color: rgba(30, 30, 46, 0.9); /* Matching Waybar islands */
+    font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
-    border-radius: 10px;
 }
 
-#input {
-    margin: 10px;
-    padding: 8px;
+#outer-box {
+    margin: 15px;
     border: none;
-    border-radius: 5px;
-    background-color: #3B4252;
-    color: #ECEFF4;
 }
 
 #inner-box {
     margin: 5px;
-    background-color: #2E3440;
+    border: none;
+    background-color: transparent;
 }
 
-#outer-box {
-    margin: 5px;
-    background-color: #2E3440;
+#input selection {
+    background-color: #cba6f7;
+    color: #11111b;
+}
+
+#input {
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #cdd6f4;
+}
+
+#input:focus {
+    border: 1px solid #cba6f7;
 }
 
 #scroll {
-    margin: 0;
-    background-color: #2E3440;
+    margin-top: 10px;
 }
 
-#entry {
-    padding: 10px;
-    margin: 5px 10px;
-    border-radius: 5px;
+#text selection {
     background-color: transparent;
-    color: #D8DEE9;
-}
-
-#entry:selected {
-    background-color: #88C0D0;
-    color: #2E3440;
 }
 
 #text {
-    margin: 0px;
+    margin: 5px;
+    color: #cdd6f4;
 }
 
+#entry * {
+    background-color: transparent;
+}
+
+/* Styling the selected item */
+#entry:selected {
+    background-color: #cba6f7; /* Subtle Mauve glow */
+    border-radius: 10px;
+    outline: none;
+}
+
+#text:selected {
+    color: #11111b;
+    font-weight: bold;
+}
+
+#entry:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
