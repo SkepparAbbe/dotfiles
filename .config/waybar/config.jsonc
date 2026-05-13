@@ -11,7 +11,7 @@
         "hyprland/mode",
         "hyprland/scratchpad"
     ],
-    "modules-center": ["hyprland/window"],
+//    "modules-center": ["mpris"],
 
     "modules-right": [
         "idle_inhibitor",
@@ -22,7 +22,6 @@
         "memory",
         "temperature",
         "backlight",
-        "hyprland/language",
         "battery",
         "clock",
         "tray"
@@ -98,8 +97,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "󰅶",
+            "deactivated": "󰛊"
         }
     },
     "tray": {
@@ -211,5 +210,17 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+    },
+    "mpris": {
+        "format": "{player}: {player_icon} {title} - {artist}",
+        "format-paused": "{player}: {status_icon} <i>{title} - {artist}</i>",
+        "player-icons": {
+            "default": "⏸",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "▶"
+        },
+        // "ignored-players": ["firefox"]
     }
 }

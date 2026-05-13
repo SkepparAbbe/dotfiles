@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -111,7 +112,10 @@ export PATH=$PATH:/opt/idea-IU-242.23339.11/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.local/bin:$PATH
 export GTK_THEME="Nordic-master"
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    eval "$(ssh-agent -s)"
-fi
 
+
+[ -f "/home/albin/.ghcup/env" ] && . "/home/albin/.ghcup/env" # ghcup-env
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/keyring/ssh"
+
+# opencode
+export PATH=/home/albin/.opencode/bin:$PATH
